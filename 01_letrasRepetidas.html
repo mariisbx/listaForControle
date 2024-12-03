@@ -11,10 +11,22 @@
 
     //ENTRADA
 
-    
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let Liguais = [];
+    let Lvistas = [];
+
     //PROCESSAMENTO
 
-    
+    for (let letras = 0; letras < listaDeLetras.length; letras++) {
+    let letra = listaDeLetras[letras].toLowerCase();
+    if (Liguais.includes(letra) == false) {
+        Liguais.push(letra);
+    } else {
+        Lvistas.push(letra);
+    }
+    }
     //SAÍDA
+
+    document.write(`Letras repetidas: ${Liguais.sort()}`);
 
 </script>
