@@ -18,15 +18,15 @@
     //PROCESSAMENTO
 
     for (let letras = 0; letras < listaDeLetras.length; letras++) {
-    let letra = listaDeLetras[letras].toLowerCase();
-    if (Liguais.includes(letra) == false) {
-        Liguais.push(letra);
-    } else {
-        Lvistas.push(letra);
-    }
+        let letra = listaDeLetras[letras].toLowerCase();
+        if (Lvistas.includes(letra) == false) {
+            Lvistas.push(letra);
+        } else {
+            Liguais.push(letra);
+        }
     }
     //SAÍDA
 
-    document.write(`Letras repetidas: ${Liguais.sort()}`);
+    document.write(`Letras repetidas: ${Lvistas.sort()}`);
 
 </script>

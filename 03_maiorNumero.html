@@ -8,10 +8,24 @@
 
     //ENTRADA
 
+    let numeros = [];
     
     //PROCESSAMENTO
 
+    for (let item = 0; item <= numeros; numeros++) {
+        let numero = Number(prompt(`Informe um número:`));
+        numeros.push(numero);
+    }
+
+    let maior = numeros[0];
+    for (let numeros of numero) {
+        if (numeros > maior) {
+          maior = numeros;  
+    }
+    }
     
     //SAÍDA
+
+    alert(`O maior número é: ${maior}`);
 
 </script>
