@@ -1,18 +1,47 @@
 <meta charset="UTF-8">
 <script>
     /*
-    PROBLEMA
-    Peça para o programa perguntar ao professor regente o nome dos três candidatos a representante da sala.
-    Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
-    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
-    */
-
-    //ENTRADA
-
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
-</script>
+      PROBLEMA: REPRESENTANTE DE SALA
+      Peça para o programa perguntar ao professor regente o nome dos três candidatos a representante da sala.
+      Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
+      Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
+      */
+  
+      //ENTRADA
+      const candidatoUm = prompt(`Insira o nome do candidato um`);
+      const candidatoDois= prompt(`Insira o nome do candidato dois`);
+      const candidatoTres = prompt(`Insira o nome do candidato três`);
+      const alunosVotantes = Number(prompt(`Insira o número de alunos na sala que irão votar:`));
+      let votos1 = 0;
+      let votos2 = 0;
+      let votos3 = 0;
+  
+      //PROCESSAMENTO
+     for(let votos = 1; votos <= alunosVotantes; votos++ ){
+      let votosSepparados = Number(prompt(`Informe em quem você deseja votar: \n
+      ${candidatoUm}(1), ${candidatoDois}(2), ${candidatoTres}(3)`));
+  
+      if(votosSepparados == 1){
+        votos1++
+      }
+      else if(votosSepparados == 2){
+        votos2++
+      }
+      else if(votosSepparados == 3){
+        votos3++
+      }
+      else{
+        alert(`ERRO!!!`);
+      }
+     }
+     
+     let porcentagem1 = (votos1 / alunosVotantes)*100;
+     let porcentagem2 = (votos2 / alunosVotantes)*100;
+     let porcentagem3 = (votos3 / alunosVotantes)*100;
+       
+  
+      //SAÍDA
+     alert(`${candidatoUm} = ${votos1} votos, a porcentagem é: ${porcentagem1.toFixed(2)}%
+            ${candidatoDois} = ${votos2} votos, porcentagem é: ${porcentagem2.toFixed(2)}% 
+            ${candidatoTres} = ${votos3} votos, porcentagem é: ${porcentagem3.toFixed(2)}%`)
+  </script>
