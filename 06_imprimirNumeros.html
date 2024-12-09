@@ -7,10 +7,29 @@
 
     //ENTRADA
 
+    const inicial = Number(prompt(`Informe um número inicial:`));
+    const final = Number(prompt(`Informe um número final:`));
+    let impar = [];
+    let par = [];
     
     //PROCESSAMENTO
 
+    if (inicial < final) {
+        for(let item = inicial + 1; item < final; item++) {
+            if (item % 2 ==0) {
+                par.push(item);
+            }
+            else {
+                impar.push(item);
+            }
+        }
+    }
+    else {
+        alert(`ERRO!`);
+    }
     
     //SAÍDA
+
+    alert(`Pares: ${par} e Ímpares: ${impar}`);
 
 </script>

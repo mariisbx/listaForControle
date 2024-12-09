@@ -7,10 +7,19 @@
 
     //ENTRADA
 
+    let hab = 80000;
+    let anos = 0;
+    let cresc = 0.03; 
+    let estimada = 200000;
     
     //PROCESSAMENTO
 
+    for (; hab <= estimada; anos++) {
+       hab += (hab * cresc);
+    }
     
     //SAÍDA
+
+    alert(`A quantidade de anos necessária é ${anos} anos.`);
 
 </script>

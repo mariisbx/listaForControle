@@ -12,15 +12,15 @@
     
     //PROCESSAMENTO
 
-    for (let item = 0; item <= numeros; numeros++) {
+    for (let item = 0; item < 5; item++) {
         let numero = Number(prompt(`Informe um número:`));
         numeros.push(numero);
     }
 
     let maior = numeros[0];
-    for (let numeros of numero) {
-        if (numeros > maior) {
-          maior = numeros;  
+    for (let numero of numeros) {
+        if (numero > maior) {
+          maior = numero;  
     }
     }
     

@@ -7,10 +7,20 @@
 
     //ENTRADA
 
+    let dez = 50000;
+    let cinco = 50000;
     
     //PROCESSAMENTO
     
+    for (let item = 1; item <= 5; item++) {
+        cinco += ( cinco * 0.015); 
+    }
+    for (let item = 1; item <= 10; item++) {
+        dez += (dez * 0.015); 
+    }
 
     //SAÍDA
+
+    alert(`A população prevista será de ${Math.round(cinco)} pessoas. \nA população prevista será de ${Math.round(dez)} pessoas.`);
 
 </script>
